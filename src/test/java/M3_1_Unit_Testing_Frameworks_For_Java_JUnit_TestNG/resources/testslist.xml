@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FullTest"> <!--parallel="false"-->
+    <groups>
+        <run>
+            <exclude name="math doubles"></exclude>
+            <exclude name="trigonometric functions"></exclude>
+            <exclude name="need clarification"></exclude>
+        </run>
+    </groups>
+    <test name="AllTestsForTNG">
+        <parameter name="first" value="1"/>
+        <parameter name="second" value="4"/>
+        <classes>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_1SumLong"></class>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_2SumDouble"></class>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_3SubLong"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_4SubDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_5MultLong"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_6MultDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_7DivLong"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_8DivDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_9PowDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_10SqrtDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_11TgDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_12CtgDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_13CosDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_14SinDouble"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_15IsPositiveBoolean"/>
+            <class name="M3_1_Unit_Testing_Frameworks_For_Java_JUnit_TestNG.tests.TestsTNG.Test_TNG_16IsPositiveBoolean"/>
+        </classes>
+    </test>
+</suite>
